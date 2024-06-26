@@ -19,7 +19,7 @@
 
 ## Find me around the web 🌎
 - Sharing updates on <a href="https://www.linkedin.com/in/ansh3491/">LinkedIn</a> 😇
-- Checkout my <a href="">Portfolio</a> 😇
+- Checkout my <a href="https://firefrost91.github.io/">Blog</a> 😇
 
 <img src="/github-metrics.svg" alt="Metrics" width="100%">
 
