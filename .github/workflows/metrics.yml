@@ -44,3 +44,6 @@ jobs:
           plugin_languages_recent_load: 300000
           plugin_languages_sections: most-used
           plugin_languages_threshold: 0%
+          plugin_chess: yes
+          plugin_chess_token: ${{ secrets.CHESS_TOKEN }}
+          plugin_chess_platform: lichess.org
