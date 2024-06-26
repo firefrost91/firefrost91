@@ -8,7 +8,7 @@
 ## 👨🏻‍💻 &nbsp;About Me
 
 <img alt="GitHub" src="/github.svg" width="200" height="200" align="right"/>
-<img alt="GitHub" src="/monitor.svg" width="200" height="200" align="right"/>
+<img alt="GitHub" src="/monitor.svg" width="180" height="180" align="right"/>
 
 
 
