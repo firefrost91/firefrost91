@@ -1,6 +1,6 @@
 # Hi, I'm Anshuman Mishra 👋 👨‍💻
 
-[![Twitter Follow](https://img.shields.io/badge/follow-%40Anshuman-Mishra-1DA1F2?logo=twitter&style=social)](https://x.com/anshm3491)
+[![Twitter Follow](https://img.shields.io/badge/follow-%40Anshuman-1DA1F2?logo=twitter&style=social)](https://x.com/anshm3491)
 [![Linkedin: Ansh](https://img.shields.io/badge/-Ansh-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/ansh3491/)](https://www.linkedin.com/in/ansh3491/)
 ![GitHub followers](https://img.shields.io/github/followers/firefrost91?label=Follow&style=social)
 
