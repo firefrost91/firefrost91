@@ -8,6 +8,8 @@
 ## 👨🏻‍💻 &nbsp;About Me
 
 <img alt="GitHub" src="/github.svg" width="200" height="200" align="right"/>
+<img alt="GitHub" src="/monitor.svg" width="200" height="200" align="right"/>
+
 
 
 🎓 &nbsp;I'm a graduate of BITS Pilani and I am currently working as a backend engineer at Innovation Labs, Tata AIG.\
