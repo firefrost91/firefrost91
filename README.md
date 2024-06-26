@@ -19,8 +19,5 @@
 - Sharing updates on <a href="https://www.linkedin.com/in/thisisanshg/">LinkedIn</a> 😇
 - Checkout my <a href="https://ansh.live/">Portfolio</a> 😇
 
-<picture>
-  <img src="/github-metrics.svg" alt="Metrics">
-</picture>
-
+<img src="/github-metrics.svg" alt="Metrics" width="100%">
 
