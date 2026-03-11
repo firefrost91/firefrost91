@@ -1,4 +1,4 @@
-# Hi, I'm Anshuman Mishra 👋 👨‍💻
+# Hi, I'm Ansh Mishra 👋 👨‍💻
 
 [![Twitter Follow](https://img.shields.io/badge/follow-%40Anshuman-1DA1F2?logo=twitter&style=social)](https://x.com/anshm3491)
 [![Linkedin: Ansh](https://img.shields.io/badge/-Ansh-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/ansh3491/)](https://www.linkedin.com/in/ansh3491/)
@@ -64,7 +64,7 @@ AWS • GCP
 ## 🌎 Find me around the web
 
 - Sharing thoughts on <a href="https://www.linkedin.com/in/ansh3491/">LinkedIn</a>
-- Writing occasionally on <a href="https://firefrost91.github.io/">Blog</a>
+- Writing occasionally on <a href="https://www.anshbuilds.com/blog">Blog</a>
 
 ---
 
