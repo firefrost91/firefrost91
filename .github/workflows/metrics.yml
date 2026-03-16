@@ -1,50 +1,107 @@
-# Visit https://github.com/lowlighter/metrics#-documentation for full reference
 name: Metrics
 on:
-  # Schedule daily updates
-  schedule: [{cron: "0 0 * * *"}]
-  # (optional) Run workflow manually
+  # Run daily at midnight UTC
+  schedule:
+    - cron: "0 0 * * *"
+  # Run on push to main/master
+  push:
+    branches: ["main", "master"]
+  # Allow manual trigger
   workflow_dispatch:
-  # (optional) Run workflow when pushing on master/main
-  push: {branches: ["master", "main"]}
+
 jobs:
-  github-metrics:
+  # ======================
+  # HEADER + LANGUAGES + ISOCALENDAR
+  # ======================
+  general:
     runs-on: ubuntu-latest
-    environment: 
-      name: production
     permissions:
       contents: write
     steps:
       - uses: lowlighter/metrics@latest
         with:
+          filename: metrics-general.svg
           token: ${{ secrets.METRICS_TOKEN }}
-
-          # Options
           user: firefrost91
-          template: classic
           base: header, activity, community, repositories, metadata
-          base_hireable: yes
-          config_octicon: yes
-          config_timezone: Asia/Kolkata
-          config_twemoji: yes
+          base_indepth: yes
+          config_timezone: America/New_York
+          config_order: base.header, isocalendar, languages, notable
+          plugin_isocalendar: yes
+          plugin_isocalendar_duration: full-year
+          plugin_languages: yes
+          plugin_languages_indepth: yes
+          plugin_languages_details: lines, bytes-size, percentage
+          plugin_languages_sections: most-used, recently-used
+          plugin_languages_limit: 8
+          plugin_languages_ignored: html, css, tex, less, dockerfile, makefile, shell, ejs
+          plugin_notable: yes
+          plugin_notable_repositories: yes
+
+  # ======================
+  # ACHIEVEMENTS
+  # ======================
+  achievements:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: lowlighter/metrics@latest
+        with:
+          filename: metrics-achievements.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          user: firefrost91
+          base: ""
+          config_timezone: America/New_York
           plugin_achievements: yes
           plugin_achievements_display: detailed
-          plugin_achievements_secrets: yes
           plugin_achievements_threshold: C
-          plugin_languages: yes
-          plugin_languages_analysis_timeout: 15
-          plugin_languages_analysis_timeout_repositories: 7.5
-          plugin_languages_categories: markup, programming
-          plugin_languages_colors: github
-          plugin_languages_ignored: html, css
-          plugin_languages_limit: 8
-          plugin_languages_recent_categories: markup, programming
-          plugin_languages_recent_days: 3000
-          plugin_languages_recent_load: 300
-          plugin_languages_sections: most-used
-          plugin_languages_threshold: 0%
-          plugin_starlists: yes
-          plugin_starlists_limit: 2
-          plugin_starlists_limit_languages: 8
-          plugin_starlists_limit_repositories: 2
-          plugin_starlists_shuffle_repositories: yes
+
+  # ======================
+  # CODING HABITS
+  # ======================
+  habits:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: lowlighter/metrics@latest
+        with:
+          filename: metrics-habits.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          user: firefrost91
+          base: ""
+          config_timezone: America/New_York
+          plugin_habits: yes
+          plugin_habits_from: 200
+          plugin_habits_days: 14
+          plugin_habits_facts: yes
+          plugin_habits_charts: yes
+          plugin_habits_charts_type: classic
+          plugin_habits_trim: yes
+          plugin_habits_languages_limit: 8
+          plugin_habits_languages_threshold: 0%
+
+  # ======================
+  # ACTIVITY + LINES OF CODE
+  # ======================
+  activity:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: lowlighter/metrics@latest
+        with:
+          filename: metrics-activity.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          user: firefrost91
+          base: ""
+          config_timezone: America/New_York
+          plugin_activity: yes
+          plugin_activity_limit: 5
+          plugin_activity_days: 14
+          plugin_activity_filter: all
+          plugin_activity_visibility: public
+          plugin_lines: yes
+          plugin_lines_sections: base, repositories
+          plugin_lines_repositories_limit: 4
