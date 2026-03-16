@@ -1,18 +1,12 @@
 name: Metrics
 on:
-  # Run daily at midnight UTC
   schedule:
     - cron: "0 0 * * *"
-  # Run on push to main/master
   push:
     branches: ["main", "master"]
-  # Allow manual trigger
   workflow_dispatch:
 
 jobs:
-  # ======================
-  # HEADER + LANGUAGES + ISOCALENDAR
-  # ======================
   general:
     runs-on: ubuntu-latest
     permissions:
@@ -38,9 +32,6 @@ jobs:
           plugin_notable: yes
           plugin_notable_repositories: yes
 
-  # ======================
-  # ACHIEVEMENTS
-  # ======================
   achievements:
     runs-on: ubuntu-latest
     permissions:
@@ -57,9 +48,6 @@ jobs:
           plugin_achievements_display: detailed
           plugin_achievements_threshold: C
 
-  # ======================
-  # CODING HABITS
-  # ======================
   habits:
     runs-on: ubuntu-latest
     permissions:
@@ -82,9 +70,6 @@ jobs:
           plugin_habits_languages_limit: 8
           plugin_habits_languages_threshold: 0%
 
-  # ======================
-  # ACTIVITY + LINES OF CODE
-  # ======================
   activity:
     runs-on: ubuntu-latest
     permissions:
