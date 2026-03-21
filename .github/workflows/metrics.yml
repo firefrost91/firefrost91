@@ -12,7 +12,7 @@ jobs:
     permissions:
       contents: write
     steps:
-      - uses: lowlighter/metrics@v3.34.0
+      - uses: lowlighter/metrics@latest
         with:
           filename: metrics-general.svg
           token: ${{ secrets.METRICS_TOKEN }}
