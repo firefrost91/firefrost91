@@ -14,9 +14,14 @@ jobs:
     permissions:
       contents: write
     steps:
-      - uses: lowlighter/metrics@latest
-        with:
-          filename: metrics-general.svg
+    steps:
+          - name: Check token
+            run: |
+              if [ -z "${{ secrets.METRICS_TOKEN }}" ]; then
+                echo "Token is EMPTY"
+              else
+                echo "Token is present"
+              fi
           token: ${{ secrets.METRICS_TOKEN }}
           user: firefrost91
           base: header, activity, community, repositories, metadata
