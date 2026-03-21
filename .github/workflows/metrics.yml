@@ -9,6 +9,8 @@ on:
 jobs:
   general:
     runs-on: ubuntu-latest
+    environment: production        # <-- add this line
+
     permissions:
       contents: write
     steps:
