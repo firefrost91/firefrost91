@@ -69,7 +69,7 @@ AWS • GCP
 
 ---
 <div align="center">
-<img src="https://github-readme-stats-gswf.vercel.app/api/top-langs?username=firefrost91&layout=compact&langs_count=8&hide_border=true&theme=tokyonight" height="225" />
+<img src="https://github-readme-stats-gswf.vercel.app/api/top-langs?username=firefrost91&layout=compact&langs_count=8&hide_border=true&theme=tokyonight" width="100%" />
 </div>
 <div align="center">
 <img src="/github-metrics.svg" alt="Metrics" width="100%">
