@@ -7,8 +7,6 @@
 ---
 
 ## 👨🏻‍💻 About Me
-![Anshuman's GitHub stats](https://github-readme-stats.vercel.app/api?username=firefrost91&show_icons=true&theme=tokyonight&show=reviews,prs_merged,prs_merged_percentage)
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=firefrost91&layout=compact&theme=tokyonight&langs_count=8&hide=html,css,tex,less,dockerfile,makefile,shell,ejs)]
 
 
 <img alt="GitHub" src="/github.svg" width="200" height="200" align="right"/>
@@ -70,5 +68,7 @@ AWS • GCP
 - Writing occasionally on <a href="https://www.anshbuilds.com/blog">Blog</a>
 
 ---
-
+<img src="https://github-readme-stats-gswf.vercel.app/api/top-langs?username=firefrost91&layout=compact&langs_count=8&hide_border=true&theme=tokyonight" height="165" />
+</div>
+<div align="center">
 <img src="/github-metrics.svg" alt="Metrics" width="100%">
