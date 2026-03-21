@@ -7,6 +7,9 @@
 ---
 
 ## 👨🏻‍💻 About Me
+![Anshuman's GitHub stats](https://github-readme-stats.vercel.app/api?username=firefrost91&show_icons=true&theme=tokyonight&show=reviews,prs_merged,prs_merged_percentage)
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=firefrost91&layout=compact&theme=tokyonight&langs_count=8&hide=html,css,tex,less,dockerfile,makefile,shell,ejs)]
+
 
 <img alt="GitHub" src="/github.svg" width="200" height="200" align="right"/>
 
