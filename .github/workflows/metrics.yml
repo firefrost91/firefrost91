@@ -5,23 +5,23 @@ on:
   push:
     branches: ["main", "master"]
   workflow_dispatch:
-
 jobs:
   general:
     runs-on: ubuntu-latest
-    environment: production        # <-- add this line
-
+    environment: production
     permissions:
       contents: write
     steps:
-    steps:
-          - name: Check token
-            run: |
-              if [ -z "${{ secrets.METRICS_TOKEN }}" ]; then
-                echo "Token is EMPTY"
-              else
-                echo "Token is present"
-              fi
+      - name: Check token
+        run: |
+          if [ -z "${{ secrets.METRICS_TOKEN }}" ]; then
+            echo "Token is EMPTY"
+          else
+            echo "Token is present"
+          fi
+      - uses: lowlighter/metrics@latest
+        with:
+          filename: metrics-general.svg
           token: ${{ secrets.METRICS_TOKEN }}
           user: firefrost91
           base: header, activity, community, repositories, metadata
@@ -38,9 +38,9 @@ jobs:
           plugin_languages_ignored: html, css, tex, less, dockerfile, makefile, shell, ejs
           plugin_notable: yes
           plugin_notable_repositories: yes
-
   achievements:
     runs-on: ubuntu-latest
+    environment: production
     permissions:
       contents: write
     steps:
@@ -54,9 +54,9 @@ jobs:
           plugin_achievements: yes
           plugin_achievements_display: detailed
           plugin_achievements_threshold: C
-
   habits:
     runs-on: ubuntu-latest
+    environment: production
     permissions:
       contents: write
     steps:
@@ -76,9 +76,9 @@ jobs:
           plugin_habits_trim: yes
           plugin_habits_languages_limit: 8
           plugin_habits_languages_threshold: 0%
-
   activity:
     runs-on: ubuntu-latest
+    environment: production
     permissions:
       contents: write
     steps:
